@@ -40,7 +40,7 @@ public class DBUtils {
 	
 	/**
 	 * 开始事务
-	 * @param conn
+	 * @param conn 数据库连接
 	 */
 	public static void beginTransaction(Connection conn) {
 		try {
@@ -54,7 +54,7 @@ public class DBUtils {
 	
 	/**
 	 * 提交事务
-	 * @param conn
+	 * @param conn 数据库连接
 	 */
 	public static void commit(Connection conn) {
 		try {
@@ -67,7 +67,7 @@ public class DBUtils {
 	
 	/**
 	 * 回滚事务
-	 * @param conn
+	 * @param conn 数据库连接
 	 */
 	public static void rollback(Connection conn) {
 		try {
@@ -83,7 +83,7 @@ public class DBUtils {
 	
 	/**
 	 * 关闭数据库连接
-	 * @param conn
+	 * @param conn 数据库连接
 	 */
 	public static void closeConnection(Connection conn) {
 		
@@ -100,8 +100,8 @@ public class DBUtils {
 	
 	/**
 	 * 关闭事务 
-	 * @param rs
-	 * @param stmt
+	 * @param rs 查询结果集
+	 * @param stmt 参数stmt
 	 */
     public static void closeStatement(ResultSet rs,Statement stmt) {
     	try {

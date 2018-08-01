@@ -46,8 +46,8 @@ public class check {
 	/**
 	 * 确认字符串是否为email格式
 	 *
-	 * @param strEmail
-	 * @return
+	 * @param strEmail 邮件地址
+	 * @return true or false
 	 */
 	public static boolean isEmail(String strEmail) {
 	    String strPattern = "^[a-zA-Z][\\w\\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\\w\\.-]*[a-zA-Z0-9]\\.[a-zA-Z][a-zA-Z\\.]*[a-zA-Z]$";
@@ -58,8 +58,8 @@ public class check {
 	
 	/**
 	 * 判断是否为空
-	 * @param str
-	 * @return
+	 * @param str 字符串
+	 * @return true or false
 	 */
 	public static boolean isNull(String str) {
 		if(str!=null) return true;

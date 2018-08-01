@@ -35,27 +35,28 @@ public interface UserDao extends BaseDao {
 	
 	/**
 	 * 查询所有用户
+	 * @return 返回用户记录集
 	 */
 	public Vector<UserVO> searchUser();
 	
 	/**
 	 * 更新用户信息
-	 * @param user
-	 * @return
+	 * @param user 用户信息
+	 * @return true or false
 	 */
 	public boolean updateUser(UserVO user);
 	
 	/**
 	 * 根据用户id删除
-	 * @param id
-	 * @return
+	 * @param id 用户账户号
+	 * @return true or false
 	 */
 	public boolean deleteById(String id);	
 	
 	/**
 	 * 分页查询
-	 * @param i
-	 * @return
+	 * @param page 页码
+	 * @return 用户记录集
 	 */
 	public Vector<UserVO> searchByPage(int page);
 	

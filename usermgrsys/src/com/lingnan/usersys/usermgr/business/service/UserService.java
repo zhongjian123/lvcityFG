@@ -8,7 +8,7 @@ public interface UserService {
 	
 	/**
 	 * 注册用户/添加用户
-	 * @param user
+	 * @param user 一条用户信息
 	 * @return 成功返回true，失败返回false
 	 */
 	public boolean addUser(UserVO user);
@@ -29,35 +29,36 @@ public interface UserService {
 	public UserVO searchById(String id);
 	
 	/**
-	 * 查询所有用户信息
+	 *  查询所有用户信息
+	 * @return 用户信息记录
 	 */
 	public Vector<UserVO> searchUser();
 	
 	/**
 	 * 模糊查询
-	 * @param 任意数据
-	 * @return 多条记录
+	 * @param str 模糊信息
+	 * @return 用户信息记录
 	 */
 	public Vector<UserVO> searchVague(String str);
 	
 	/**
 	 * 更新用户信息
-	 * @param user
-	 * @return
+	 * @param user 用户信息
+	 * @return true or false
 	 */
 	public boolean updateUser(UserVO user);
 	
 	/**
 	 * 根据用户id删除
-	 * @param id
-	 * @return
+	 * @param id 用户账号
+	 * @return true or false
 	 */
 	public boolean deleteById(String id);
 	
 	/**
 	 * 分页查询
-	 * @param i
-	 * @return
+	 * @param page 页码
+	 * @return 用户记录
 	 */
 	public Vector<UserVO> searchByPage(int page);
 

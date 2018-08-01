@@ -7,14 +7,14 @@ import com.lingnan.usersys.usermgr.business.dao.UserDaoImpl;
 
 /**
  * 工厂模式类
- * @author 14832
+ * @author 14832 zhi
  *
  */
 public class Daofactory {
 	/**
 	 * 工厂模式获取dao实现类
-	 * @param conn
-	 * @param type
+	 * @param conn 数据库连接
+	 * @param type 类型
 	 * @return //返回实例化的dao对象
 	 */
 	public static BaseDao getDao(Connection conn,String type) {
