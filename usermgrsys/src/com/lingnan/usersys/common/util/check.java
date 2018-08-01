@@ -9,6 +9,11 @@ import java.util.regex.Pattern;
 
 import com.lingnan.usersys.common.exception.ServiceException;
 
+/**
+ * 使用工具类
+ * @author 14832
+ *
+ */
 public class check {
 	/**
 	 * 日期转字符串
@@ -51,6 +56,11 @@ public class check {
 	    return m.matches();
 	}
 	
+	/**
+	 * 判断是否为空
+	 * @param str
+	 * @return
+	 */
 	public static boolean isNull(String str) {
 		if(str!=null) return true;
 		else return false;	

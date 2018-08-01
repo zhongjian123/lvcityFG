@@ -1,5 +1,10 @@
 package com.lingnan.usersys.common.exception;
 
+/**
+ * dao异常类
+ * @author 14832
+ *
+ */
 public class DAOException extends RuntimeException{
 	public DAOException()
 	{

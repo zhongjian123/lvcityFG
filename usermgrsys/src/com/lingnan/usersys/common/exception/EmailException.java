@@ -1,7 +1,7 @@
 package com.lingnan.usersys.common.exception;
 
 /**
- * 
+ * 邮件地址异常类
  * @author 14832
  *
  */

@@ -1,6 +1,9 @@
 package com.lingnan.usersys.usermgr.domain;
 
 import java.sql.Date;
+
+
+
 /**
  * 用户信息类
  * @author 14832
@@ -11,8 +14,8 @@ public class UserVO {
 	private String name;    //姓名
 	private String nex;     //性别
 	private String pass;    //密码
-	private String  power;     //权限
-	private String status;    //状态
+	private String  power="0";     //权限
+	private String status="1";    //状态
 	private Date birth;     //生日
 	private String mail;    //邮件
 	public String getId() {

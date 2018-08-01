@@ -1,7 +1,7 @@
 package com.lingnan.usersys.common.exception;
 
 /**
- * 
+ * 数据异常类
  * @author 14832
  *
  */

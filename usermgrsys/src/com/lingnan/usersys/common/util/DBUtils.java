@@ -22,12 +22,12 @@ public class DBUtils {
 		Connection conn = null;
 		try {
 		Class.forName("oracle.jdbc.driver.OracleDriver");   //加载数据库驱动
-		System.out.println("数据库驱动加载成功！");	//输出的信息
+//		System.out.println("数据库驱动加载成功！");	//输出的信息
 		String url = "jdbc:oracle:thin:@localhost:1521:orcl";	//获取连接URL
 		String user = "scott"; //连接用户名
 		String password = "123456"; //连接密码
 		conn = DriverManager.getConnection(url, user, password); //获取数据库连接
-		System.out.println("数据库连接成功！");	//输出的信息
+//		System.out.println("数据库连接成功！");	//输出的信息
 		}catch (ClassNotFoundException e) {
 			throw new DAOException("加载数据库驱动失败！", e);
 		}

@@ -2,20 +2,41 @@ package com.lingnan.usersys.common.util;
 
 import static org.junit.Assert.*;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+
+
 import java.util.Date;
 
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * 测试工具类
+ * @author 14832
+ *
+ */
 public class checkTest {
 
 	@Test
 	public void testDateToStr() {
-		Date d =new Date();  
-		String str=check.dateToStr(d);
-		System.out.println(str);
+		try {
+			SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+			String st="2018-08-08";
+			Date t=sdf.parse(st);
+			String str=check.dateToStr(t);
+			
+			java.util.Date ud = sdf.parse(st);   //getFactTime()返回String类型
+	        java.sql.Date sd=new java.sql.Date(ud.getTime());
+	        System.out.println("日期sd::  "+sd);
+			
+			System.out.println("日期t::  "+t);
+			System.out.println("日期str::  "+str);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	@Test
 	public void testStrToDate() {
