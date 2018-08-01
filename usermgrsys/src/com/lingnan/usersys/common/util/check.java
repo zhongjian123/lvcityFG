@@ -18,7 +18,7 @@ public class check {
 	/**
 	 * 日期转字符串
 	 * @param t 传入一个日期
-	 * @return返回字符串
+	 * @return 返回字符串
 	 */
 	public static String dateToStr(Date t) {
 		String str=null;
