@@ -60,9 +60,10 @@ public interface UserDao extends BaseDao {
 	 */
 	public Vector<UserVO> searchByPage(int page);
 	
+	
 	/**
 	 * 模糊查询
-	 * @param 任意数据
+	 * @param str 任意数据
 	 * @return 多条记录
 	 */
 	public Vector<UserVO> searchVague(String str);

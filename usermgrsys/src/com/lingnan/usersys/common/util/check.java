@@ -17,8 +17,8 @@ import com.lingnan.usersys.common.exception.ServiceException;
 public class check {
 	/**
 	 * 日期转字符串
-	 * @param t传入一个日期，格式为"yyyy-MM-dd"
-	 * @return 返回字符串
+	 * @param t 传入一个日期
+	 * @return返回字符串
 	 */
 	public static String dateToStr(Date t) {
 		String str=null;
