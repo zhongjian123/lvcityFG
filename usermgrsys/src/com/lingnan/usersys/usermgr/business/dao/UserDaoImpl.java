@@ -297,9 +297,7 @@ public class UserDaoImpl implements UserDao{
 				rs=stmt.executeQuery("select count(*) from myuser");
 				if(rs.next()) end=rs.getInt(1);
 			}
-			System.out.println("ddfddd"+start+end);
 			String sql="select * from (select myuser.*,rownum rc from myuser where rownum<='"+end+"') a where a.rc>='"+start+"'";
-			
 			rs=stmt.executeQuery(sql);
 			while (rs.next()) {
 				UserVO vo=new UserVO();
